@@ -1,0 +1,21 @@
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import heroImg from "./assets/hero.png";
+import "./App.css";
+
+function App(props) {
+  const currDate = new Date();
+
+  return (
+    <div>
+      <h1>Joshua Kyle C. Arcilla</h1>
+      <h2>
+        The time now is {currDate.toLocaleTimeString()}{" "}
+        {currDate.toLocaleDateString()}.
+      </h2>
+    </div>
+  );
+}
+
+export default App;
